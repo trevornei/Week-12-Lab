@@ -76,6 +76,8 @@ Part 1: Setup your JSON server`)
  *
  * ↓ YOUR CODE HERE ↓ */
 
+const URL_ENDPOINT = "http://localhost:3000/studentRoster";
+
 /*------------------------ Part 2: HTTP Verb: GET ------------------------*/
 console.log(
   `-------------------------- 
