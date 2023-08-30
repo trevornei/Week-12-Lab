@@ -135,6 +135,20 @@ Part 3: POST and adding new students`
  *
  * ↓ YOUR CODE HERE ↓ */
 
+$('submitStudent').click(function (event) {
+  event.preventDefault();
+})
+
+$('#submitStudent').click(function (e) {
+  e.preventDefault()
+  g
+  $.post(URL_ENDPOINT, {
+    // fullName is the input node!
+    fullName: $('#fullName').val(),
+    researchAssignment: $('#newAssignment').val(),
+  })
+})
+
 /*------------------------ Part 4: HTTP Verb: DELETE ------------------------*/
 console.log(
   `-------------------------- 
