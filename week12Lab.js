@@ -84,6 +84,12 @@ console.log(
 Part 2: GET and displaying the information`
 )
 
+$.get(URL_ENDPOINT).then(data => {
+  data.map(student => {
+    
+  })
+})
+
 /**
  * Step 1: Use $.get(api_url_here).then(data => console.log(data)) to check if
  *         our GET is set up correctly. You should be logging an array of objects.
