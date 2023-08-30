@@ -91,14 +91,14 @@ $.get(URL_ENDPOINT).then(data => {
     //Append fName and research assignment to the table.
     $('tbody').append(
       $(`
-        <tr>
-          <td>${student.fullName}</td> 
-          <td>${student.researchAssignment}</td>
-          <td>
-            <button>🗑<button>
-          </td>
-        </tr>
-      `)
+      <tr>
+        <td>${student.fullName}</td> 
+        <td>${student.researchAssignment}</td>
+        <td>
+          <button>🗑</button>
+        </td>
+      </tr>
+    `)
     )
   })
 })
