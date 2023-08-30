@@ -94,6 +94,11 @@ $.get(URL_ENDPOINT).then(data => {
         <tr>
           <td>${student.fullName}</td> 
           <td>${student.researchAssignment}</td>
+          <td>
+            <button>
+            🗑
+            <button>
+          <td>
         </tr>
       `)
     )
@@ -141,7 +146,7 @@ $('submitStudent').click(function (event) {
 
 $('#submitStudent').click(function (e) {
   e.preventDefault()
-  g
+  
   $.post(URL_ENDPOINT, {
     // fullName is the input node!
     fullName: $('#fullName').val(),
