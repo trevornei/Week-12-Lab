@@ -83,10 +83,20 @@ console.log(
   `-------------------------- 
 Part 2: GET and displaying the information`
 )
-
+// get HTTP verb
+// with the data returned mapped over the data.
+// for each studend returned table rows to the body with Studends full name in the first column and their research assingment.
 $.get(URL_ENDPOINT).then(data => {
   data.map(student => {
-    
+    //Append fName and research assignment to the table.
+    $('tbody').append(
+      $(`
+        <tr>
+          <td>${student.fullName}</td> 
+          <td>${student.researchAssignment}</td>
+        </tr>
+      `)
+    )
   })
 })
 
